@@ -1,0 +1,107 @@
+.projects-section {
+    background-color: #f8f9fa;
+    padding: 80px 0;
+  }
+  
+  .section-subtitle {
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .project-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: none;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+  }
+  
+  .project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  }
+  
+  .project-image-container {
+    position: relative;
+    overflow: hidden;
+    height: 200px;
+  }
+  
+  .project-image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+  }
+  
+  .project-card:hover .project-image-container img {
+    transform: scale(1.05);
+  }
+  
+  .live-badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: linear-gradient(90deg, #7209b7 0%, #4361ee 100%);
+    color: white;
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-decoration: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  .tech-badge {
+    background-color: #f0f0f0 !important;
+    color: #444 !important;
+    font-size: 0.75rem;
+    padding: 0.35em 0.65em;
+    border-radius: 0.25rem;
+    font-weight: 500;
+    transition: all 0.2s ease;
+  }
+  
+  .tech-badge:hover {
+    background-color: #e0e0e0 !important;
+  }
+  
+  /* Cards with subtle playing card corners for magic interest */
+  .project-card::before {
+    content: "♠";
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    font-size: 12px;
+    opacity: 0.15;
+    color: #000;
+    z-index: 1;
+  }
+  
+  .project-card::after {
+    content: "♥";
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    font-size: 12px;
+    opacity: 0.15;
+    color: #d63031;
+    z-index: 1;
+  }
+  
+  /* Modal styling */
+  .modal-content {
+    border: none;
+    border-radius: 0.5rem;
+    overflow: hidden;
+  }
+  
+  .modal-header {
+    border-bottom: 1px solid #f0f0f0;
+    background-color: #f8f9fa;
+  }
+  
+  .modal-footer {
+    border-top: 1px solid #f0f0f0;
+    background-color: #f8f9fa;
+  }

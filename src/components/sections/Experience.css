@@ -1,0 +1,163 @@
+.experience-section {
+    background-color: #fff;
+    padding: 100px 0;
+  }
+  
+  .section-subtitle {
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .timeline-container {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .timeline-container::after {
+    content: '';
+    position: absolute;
+    width: 4px;
+    background: linear-gradient(to bottom, #4361ee, #7209b7);
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -2px;
+    border-radius: 2px;
+  }
+  
+  .timeline-item {
+    position: relative;
+    width: 50%;
+    margin-bottom: 50px;
+  }
+  
+  .timeline-item.left {
+    left: 0;
+    padding-right: 40px;
+  }
+  
+  .timeline-item.right {
+    left: 50%;
+    padding-left: 40px;
+  }
+  
+  .timeline-dot {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: #fff;
+    border: 4px solid #7209b7;
+    border-radius: 50%;
+    z-index: 1;
+  }
+  
+  .timeline-item.left .timeline-dot {
+    right: -10px;
+  }
+  
+  .timeline-item.right .timeline-dot {
+    left: -10px;
+  }
+  
+  .timeline-date {
+    position: absolute;
+    top: 0;
+    font-weight: 600;
+    color: #7209b7;
+  }
+  
+  .timeline-item.left .timeline-date {
+    right: -250px;
+  }
+  
+  .timeline-item.right .timeline-date {
+    left: -200px;
+  }
+  
+  .timeline-content {
+    border: none;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .timeline-content:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  }
+  
+  .timeline-title {
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 5px;
+  }
+  
+  .timeline-company {
+    font-weight: 500;
+    color: #7209b7;
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+  }
+  
+  .timeline-description {
+    color: #666;
+    margin-bottom: 15px;
+  }
+  
+  .timeline-responsibilities-title {
+    font-weight: 600;
+    font-size: 1rem;
+    margin-bottom: 10px;
+  }
+  
+  .timeline-responsibilities {
+    padding-left: 20px;
+  }
+  
+  .timeline-responsibilities li {
+    margin-bottom: 5px;
+    color: #666;
+  }
+
+  .timeline-location {
+    font-weight: 400;
+    font-style: italic;
+    color: #666;
+    font-size: 0.95rem;
+  }
+  
+  /* Mobile adjustments */
+  @media (max-width: 767.98px) {
+    .timeline-container::after {
+      left: 40px;
+    }
+    
+    .timeline-item {
+      width: 100%;
+      padding-left: 70px;
+      padding-right: 0;
+    }
+    
+    .timeline-item.left {
+      left: 0;
+      padding-right: 0;
+    }
+    
+    .timeline-item.right {
+      left: 0;
+      padding-left: 70px;
+    }
+    
+    .timeline-item.left .timeline-dot,
+    .timeline-item.right .timeline-dot {
+      left: 30px;
+    }
+    
+    .timeline-item.left .timeline-date,
+    .timeline-item.right .timeline-date {
+      left: 70px;
+      top: -30px;
+      right: auto;
+    }
+  }

@@ -1,0 +1,157 @@
+.about-section {
+    background-color: #fff;
+    padding: 100px 0;
+  }
+  
+  .section-heading {
+    position: relative;
+  }
+  
+  .heading-underline {
+    height: 4px;
+    width: 70px;
+    background: linear-gradient(90deg, #4361ee 0%, #7209b7 100%);
+    margin-top: 10px;
+  }
+  
+  .profile-image-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    max-width: 350px; /* Control the overall container width */
+    margin: 0 auto; /* Center the container */
+  }
+  
+  .card-frame {
+    position: relative;
+    padding: 15px;
+    background-color: white;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transform: rotate(-3deg);
+    transition: transform 0.3s ease;
+  }
+  
+  .card-frame:hover {
+    transform: rotate(0deg);
+  }
+  
+  .profile-image {
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transform: rotate(3deg);
+    transition: transform 0.3s ease;
+  }
+  
+  .card-frame:hover .profile-image {
+    transform: rotate(0deg);
+  }
+  
+  .profile-image img {
+    width: 100%; /* Make image responsive */
+    max-width: 280px; /* Control maximum size */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Ensure the image fills the space appropriately */
+    display: block; /* Remove any extra space below the image */
+    margin: 0 auto; /* Center the image */
+  }
+  
+  
+  .profile-image:hover img {
+    transform: scale(1.05);
+  }
+  
+  /* Card suit indicators for magic interest */
+  .card-suit {
+    position: absolute;
+    font-size: 18px;
+    opacity: 0.3;
+  }
+  
+  .top-left {
+    top: 10px;
+    left: 10px;
+    color: #e74c3c;
+  }
+  
+  .top-right {
+    top: 10px;
+    right: 10px;
+    color: #e74c3c;
+  }
+  
+  .bottom-left {
+    bottom: 10px;
+    left: 10px;
+    color: #333;
+  }
+  
+  .bottom-right {
+    bottom: 10px;
+    right: 10px;
+    color: #333;
+  }
+  
+  /* Interest Card */
+  .interest-card {
+    border: none;
+    border-left: 4px solid #7209b7;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    background-color: #f8f9fa;
+  }
+  
+  .interest-icon {
+    width: 60px;
+    height: 60px;
+    margin: 0 auto 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: #f0f0f0;
+    color: #4361ee;
+    font-size: 24px;
+    transition: all 0.3s ease;
+  }
+  
+  .interest-icon:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .interest-icon.magic {
+    color: #d63031;
+  }
+  
+  .interest-icon.gaming {
+    color: #6c5ce7;
+  }
+  
+  .interest-icon.bartending {
+    color: #fdcb6e;
+  }
+  
+  .interest-label {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 0;
+  }
+  
+  @media (max-width: 991.98px) {
+    .about-section {
+      text-align: center;
+    }
+    .profile-image img {
+      max-width: 220px;
+    }
+
+    .card-frame {
+      max-width: 240px;
+    }
+    
+    .heading-underline {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }

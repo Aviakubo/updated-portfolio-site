@@ -1,0 +1,107 @@
+.skills-section {
+    background-color: #f8f9fa;
+    padding: 100px 0;
+  }
+  
+  .section-subtitle {
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .skills-card {
+    border: none;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .skills-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  }
+  
+  .skill-category {
+    color: #7209b7;
+    font-weight: 600;
+    position: relative;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #f0f0f0;
+  }
+  
+  .skill-tags {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+  }
+  
+  .skill-badge {
+    font-size: 0.9rem;
+    padding: 8px 16px;
+    margin-right: 8px;
+    margin-bottom: 8px;
+    background-color: #f0f0f0 !important;
+    color: #333 !important;
+    font-weight: 500;
+    border-radius: 50px;
+    transition: all 0.2s ease;
+  }
+  
+  .skill-badge:hover {
+    background-color: #e0e0e0 !important;
+    transform: translateY(-2px);
+  }
+  
+  /* Interests section */
+  .interests-container {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    margin-top: 70px;
+  }
+  
+  .interest-icon {
+    width: 60px;
+    height: 60px;
+    margin: 0 auto 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: #f0f0f0;
+    color: #4361ee;
+    font-size: 24px;
+    transition: all 0.3s ease;
+  }
+  
+  .interest-icon:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .interest-icon.photography {
+    color: #3498db;
+  }
+  
+  .interest-icon.magic {
+    color: #d63031;
+  }
+  
+  .interest-icon.gaming {
+    color: #6c5ce7;
+  }
+  
+  .interest-icon.bartending {
+    color: #fdcb6e;
+  }
+  
+  .interest-label {
+    font-size: 0.9rem;
+    color: #666;
+    margin-top: 5px;
+  }
+  
+  @media (max-width: 767.98px) {
+    .skills-section {
+      padding: 70px 0;
+    }
+  }
