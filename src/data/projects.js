@@ -1,4 +1,7 @@
-// This file contains the data for all your projects
+import truthOrDareImg from '../assets/images/truth-or-dare.png';
+import receiptifyImg from '../assets/images/receiptify-clone-frontend.png';
+import kmeansImg from '../assets/images/k-means-playlist.png';
+
 export const projects = [
     {
       id: 1,
@@ -8,7 +11,7 @@ export const projects = [
         This application provides a modern take on the classic Truth or Dare game, featuring customizable 
         categories and difficulty levels. The app allows users to filter content based on age appropriateness.
       `,
-      image: "/assets/images/truth-or-dare.jpg", // You'll need to add this image
+      image: truthOrDareImg,
       technologies: ["Angular", "TypeScript", "CSS3"],
       github: "https://github.com/yourusername/truth-or-dare",
       liveDemo: "https://truth-or-dare-frontend.vercel.app/",
@@ -31,7 +34,7 @@ export const projects = [
         listening patterns. It visualizes your top artists, genres, and tracks over time, 
         and can generate playlists based on your mood or activity preferences.
       `,
-      image: "/assets/images/spotify-analyzer.jpg", // You'll need to add this image
+      image: receiptifyImg,
       technologies: ["React", "Node.js", "Express", "Spotify API", "Chart.js"],
       github: "https://github.com/Aviakubo/receiptify-clone-frontend",
       liveDemo: null, // No live demo yet
@@ -56,7 +59,7 @@ export const projects = [
         and group them into coherent playlists. The application extracts features like tempo, energy, and
         valence from tracks to identify songs with similar characteristics.
       `,
-      image: "/assets/images/kmeans-playlist.jpg", // You'll need to add this image
+      image: kmeansImg,
       technologies: ["Python", "React", "TensorFlow", "Spotify API", "Flask"],
       github: "https://github.com/Aviakubo/spotify-content-recommendation",
       liveDemo: null, // No live demo yet
