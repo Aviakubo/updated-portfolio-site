@@ -33,7 +33,7 @@ export const projects = [
       `,
       image: "/assets/images/spotify-analyzer.jpg", // You'll need to add this image
       technologies: ["React", "Node.js", "Express", "Spotify API", "Chart.js"],
-      github: "https://github.com/yourusername/spotify-analyzer",
+      github: "https://github.com/Aviakubo/receiptify-clone-frontend",
       liveDemo: null, // No live demo yet
       challenges: [
         "Implemented OAuth authentication with the Spotify API",
@@ -58,7 +58,7 @@ export const projects = [
       `,
       image: "/assets/images/kmeans-playlist.jpg", // You'll need to add this image
       technologies: ["Python", "React", "TensorFlow", "Spotify API", "Flask"],
-      github: "https://github.com/yourusername/kmeans-playlist",
+      github: "https://github.com/Aviakubo/spotify-content-recommendation",
       liveDemo: null, // No live demo yet
       challenges: [
         "Implemented the k-means++ algorithm for music feature clustering",
