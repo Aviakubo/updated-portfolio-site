@@ -13,7 +13,7 @@ export const projects = [
       `,
       image: truthOrDareImg,
       technologies: ["Angular", "TypeScript", "CSS3"],
-      github: "https://github.com/yourusername/truth-or-dare",
+      github: "https://github.com/aviakubo/truthordarefrontend",
       liveDemo: "https://truth-or-dare-frontend.vercel.app/",
       challenges: [
         "Implemented responsive design that works on both mobile and desktop platforms",
